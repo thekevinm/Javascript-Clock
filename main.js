@@ -38,9 +38,13 @@ var clock = document.getElementById('clock');
 
 function bigClock() {
 	var time = new Date();
- 	var hours = (time.getHours() % 12).toString();
+ 	var hours = time.getHours().toString();
  	var minutes = time.getMinutes().toString();
  	var seconds = time.getSeconds().toString();
+
+ 	if (hours > 12) {
+ 		hours = hours % 12;
+ 	}
 
  	if (hours.length < 2) {
  		hours = '0' + hours
