@@ -1,0 +1,21 @@
+body {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+body {
+	background-color: black;
+	color: white;
+	margin-top: 350px;
+	text-align: center;
+}
+
+/*NORMAL CLOCK*/
+#clock {
+	font-size: 100px;
+	font-family: Copperplate;
+}
+
+/*HEX CLOCK*/
+#hex {
+	font-size: 100px;
+	font-family: Copperplate;
+}
